@@ -8,3 +8,10 @@ I am a Product and Cloud Security Architect with 20 years of experience leading 
 
 **Certifications:**
 CISSP | CCSP | CCSK | AWS Cloud Practitioner | GIAC
+### Architecture & Security Workflow
+
+```mermaid
+graph LR
+    Code[Source Code & PRs] --> SAST[Checkmarx SAST / SCA]
+    SAST --> Triage[Local LLM / Copilot Remediation]
+    Triage --> Deploy[RHEL / Cloud Workloads]
